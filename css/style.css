@@ -1,0 +1,264 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+form {
+    font-size: 1.5rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: monospace;
+    /* background-image: linear-gradient( to right, var(--oscuro) 0%, var(--blanco) 20%); */
+    /* background-color: lightgray; */
+    background-image: linear-gradient(var(--blanco), gainsboro);
+    /* color: ; */
+}
+
+form {}
+
+.boton {
+    background-color: var(--secundario);
+    text-decoration: none;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: var(--blanco);
+    margin-top: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.titulo {
+    /* color: blue; */
+    color: var(--oscuro);
+    font-family: monospace;
+    /* color: aliceblue; */
+    font-size: 3.8rem;
+}
+
+.hero {
+    background-image: url(../img/freel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* back */
+    height: 1000px;
+    /* padding: 20px; */
+    /* width: 1500px; */
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.concontenido-hero p {
+    color: var(--blanco);
+    font-size: 2.8rem;
+}
+
+.ubicacion {
+    color: var(--primario);
+}
+
+.titulo span {
+    font-size: 2rem;
+    color: darkgrey;
+}
+
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
+.navegacionPrincipal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navegacionPrincipal a {
+    color: white;
+    background-color: var(--secundario);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.navegacionPrincipal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.contenedor {
+    max-width: 120rem;
+    /* margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;  */
+    /* margin: 0 auto 0 auto; */
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+.sombra {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+}
+
+@media (min-width: 768px) {
+    .navegacionPrincipal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.servicio {
+    display: flex;
+    /* justify-content: center; no se puede usar */
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: bold;
+}
+
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicio p {
+    line-height: 2;
+    text-align: center;
+}
+
+svg {
+    height: 3rem;
+    width: 3rem;
+}
+
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr;  es lo mismo q*/
+        grid-template-columns: repeat(3, 1fr);
+        /* fr sifnifica fraccion*/
+        column-gap: 1 rem;
+    }
+}
+
+
+/* contacto */
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.contenedor-campos {}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    margin-bottom: 0.5rem;
+    color: cornsilk;
+    font-weight: bold;
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}

@@ -47,10 +47,10 @@
         </div>
     </section>
 
-    <main class="contenedor sombra">
-        <h2>Mis servicios</h2>
-        <div class="servicios">
-            <sectio class="servicio">
+    <div class="contenedor sombra">
+        <h2>Mis Servicios</h2>
+        <main class="servicios">
+            <div class="servicio">
                 <h3>Diseño Web</h3>
                 <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -64,10 +64,10 @@
             </svg>
                 </div>
                 <p>
-                    Nulla rhoncus hendrerit fringilla. Mauris tempus sagittis libero, eget finibus sem aliquet eget.
+                    Ut congue ligula sapien, ac aliquet erat viverra a. Nulla rhoncus hendrerit fringilla. Mauris tempus sagittis libero, eget finibus sem aliquet eget.
                 </p>
-            </sectio>
-            <sectio class="servicio">
+            </div>
+            <div class="servicio">
                 <h3>Aplicaciones Web</h3>
                 <div class="iconos">
                     <!-- https://tablericons.com/ -->
@@ -94,8 +94,8 @@
                 <p>
                     Ut congue ligula sapien, ac aliquet erat viverra a. Nulla rhoncus hendrerit fringilla. Mauris tempus sagittis libero, eget finibus sem aliquet eget.
                 </p>
-            </sectio>
-            <sectio class="servicio">
+            </div>
+            <div class="servicio">
                 <h3>E-Commerce</h3>
                 <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -109,40 +109,44 @@
                 <p>
                     Ut congue ligula sapien, ac aliquet erat viverra a. Nulla rhoncus hendrerit fringilla. Mauris tempus sagittis libero, eget finibus sem aliquet eget.
                 </p>
-            </sectio>
-        </div>
+            </div>
+        </main>
 
-        <section>
+        <div id="contacto" class="contacto">
             <h2>Contacto</h2>
+            <form class="formulario" action="#" method="POST">
+                <legend>Contactános llenando todos los campos</legend>
 
-            <form class="formulario">
-                <fieldset>
-                    <legend>Contactame llenando todos los campos</legend>
-                    <div class="contenedor-campos">
-                        <div class="campo">
-                            <label for="">Nombrte</label>
-                            <input class="input-text" type="text" placeholder="Nombre" />
-                        </div>
-                        <div class="campo">
-                            <label for="">Telefono</label>
-                            <input class="input-text" type="tel" placeholder="Telefono" />
-                        </div>
-                        <div class="campo">
-                            <label for="">Correo</label>
-                            <input class="input-text" type="email" placeholder="Correo" />
-                        </div>
-                        <div class="campo">
-                            <label for="">Mensaje</label>
-                            <textarea class="input-text" name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <div>
-                            <input class="boton" type="submit" value="Enviar" />
-                        </div>
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre</label>
+
+                        <input type="text" name="nombre" placeholder="Nombre" required />
                     </div>
-                </fieldset>
+                    <div class="campo">
+                        <label>Teléfono</label>
+
+                        <input type="tel" name="telefono" placeholder="Teléfono" />
+                    </div>
+                    <div class="campo w-100">
+                        <label>Correo</label>
+
+                        <input type="mail" name="correo" placeholder="Mail" />
+                    </div>
+                    <div class="campo w-100">
+                        <label>Mensaje:</label>
+
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <!--.contenedor-campos-->
+                <div class="enviar">
+                    <input class="boton" type="submit" value="Enviar" />
+                </div>
             </form>
-        </section>
-    </main>
+        </div>
+    </div>
+
     <footer>
         <p>Todos los derechos reservados por Alexis Luna Freelancer</p>
     </footer>

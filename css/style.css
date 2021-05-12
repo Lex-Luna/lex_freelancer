@@ -9,7 +9,14 @@
 html {
     box-sizing: border-box;
     min-height: 100%;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
+}
+
+.servicios,
+.navegacionPrincipa,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-align: always;
 }
 
 
@@ -63,6 +70,19 @@ h3 {
     text-align: center;
 }
 
+ul {
+    line-height: 10px;
+}
+
+footer {
+    color: rgba(255, 255, 255, 1);
+    background-color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px;
+}
+
 .contenedor {
     max-width: 120rem;
     /* margin-top: 0px;
@@ -88,12 +108,16 @@ h3 {
     background-color: var(--secundario);
 }
 
+.w100 {
+    width: 100%;
+}
+
 .navegacionPrincipal {
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* scroll-snap-align: center;
-    scroll-snap-stop: always; */
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 @media (min-width: 768px) {
@@ -146,6 +170,8 @@ h3 {
     /* width: 1500px; */
     position: relative;
     margin-bottom: 2rem;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .contenido-hero {
@@ -227,8 +253,6 @@ form {
     font-size: 1.5rem;
 }
 
-form {}
-
 .titulo {
     /* color: blue; */
     color: var(--oscuro);
@@ -252,6 +276,8 @@ form {}
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
+    /* scroll-snap-align: center;
+    scroll-snap-stop: always; */
 }
 
 .formulario fieldset {
@@ -259,7 +285,7 @@ form {}
 }
 
 .formulario legend {
-    text-align: center;
+    /* text-align: center; */
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -267,18 +293,26 @@ form {}
     color: var(--primario);
 }
 
-.contenedor-campos {}
-
-.campo {
+.contenedor-campos {
     margin-bottom: 1rem;
 }
 
-.campo label {
+.campo-linea {
+    margin-bottom: 0.5rem;
+    color: cornsilk;
+    font-weight: bold;
+    display: inline-block;
+    width: 48%;
+}
+
+.campo {
     margin-bottom: 0.5rem;
     color: cornsilk;
     font-weight: bold;
     display: block;
 }
+
+.campo label {}
 
 .input-text {
     width: 100%;

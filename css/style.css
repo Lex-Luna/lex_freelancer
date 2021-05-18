@@ -12,6 +12,29 @@ html {
     /* scroll-snap-type: y mandatory; */
 }
 
+header {
+    margin: 0;
+    overflow: hidden;
+}
+
+header .logo {
+    position: relative;
+    float: left;
+    margin: 0;
+}
+
+main .ayo {
+    float: left;
+    margin-right: 2rem;
+}
+
+.ayoPrincipal {
+    text-align: justify;
+}
+
+
+/* .ayo {} */
+
 .servicios,
 .navegacionPrincipa,
 .formulario {
@@ -84,7 +107,7 @@ footer {
 }
 
 .contenedor {
-    max-width: 120rem;
+    max-width: 50rem;
     /* margin-top: 0px;
   margin-right: auto;
   margin-bottom: 0px;
@@ -148,6 +171,15 @@ footer {
     .navegacionPrincipal a {
         margin-bottom: 0;
     }
+}
+
+.fotoPerfil {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 1rem;
+    min-width: 300px;
+    /* float: left; */
+    display: inline;
 }
 
 
@@ -222,6 +254,10 @@ footer {
         grid-template-columns: 33.3% 33.3% 33.3%;
         column-gap: 1rem;
     }
+}
+
+.limpiar {
+    clear: both;
 }
 
 .servicio {
@@ -312,7 +348,8 @@ form {
     display: block;
 }
 
-.campo label {}
+
+/* .campo label {} */
 
 .input-text {
     width: 100%;

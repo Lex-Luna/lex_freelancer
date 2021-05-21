@@ -107,7 +107,7 @@ footer {
 }
 
 .contenedor {
-    max-width: 50rem;
+    width: 80%;
     /* margin-top: 0px;
   margin-right: auto;
   margin-bottom: 0px;
@@ -118,8 +118,8 @@ footer {
 }
 
 .sombra {
-    padding: 2rem;
-    margin-bottom: 3rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 10px;
     -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
@@ -252,7 +252,7 @@ footer {
     .servicios {
         display: grid;
         grid-template-columns: 33.3% 33.3% 33.3%;
-        column-gap: 1rem;
+        column-gap: 0.5rem;
     }
 }
 
@@ -260,8 +260,9 @@ footer {
     clear: both;
 }
 
-.servicio {
-    text-align: center;
+.servicio p {
+    text-align: justify;
+    padding: 0 1.5rem;
 }
 
 .servicio {
@@ -299,6 +300,7 @@ form {
 
 .ubicacion {
     color: var(--primario);
+    display: flex;
 }
 
 .titulo span {
@@ -316,24 +318,28 @@ form {
     scroll-snap-stop: always; */
 }
 
-.formulario fieldset {
-    border: none;
-}
-
 .formulario legend {
-    /* text-align: center; */
+    text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
-    font-weight: 700;
+    /* font-weight: 700; */
     margin-bottom: 2rem;
     color: var(--primario);
 }
 
+.formulario fieldset {
+    border: none;
+}
+
+.formulario,
 .contenedor-campos {
     margin-bottom: 1rem;
+    display: flex;
 }
 
 .campo-linea {
+    grid-template-columns: auto;
+    /* justify-content: ; */
     margin-bottom: 0.5rem;
     color: cornsilk;
     font-weight: bold;
@@ -346,6 +352,7 @@ form {
     color: cornsilk;
     font-weight: bold;
     display: block;
+    flex-direction: column;
 }
 
 

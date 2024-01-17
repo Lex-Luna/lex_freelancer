@@ -12,18 +12,47 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/vectorizado.svg" alt="" width="225px" />
+    <header class="header">
+        <img src="Imagenes/Logo.png" alt="logo" height="50px" />
+        <div class="AlFinal">
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100082937272463&mibextid=ZbWKwL" class="button" target="_blank">
+                    <img src="Imagenes/facebook.png" alt="Icono de Facebook" height="30px" />
+                </a>
+                <a href="https://instagram.com/csm_mobiliario?igshid=MzRlODBiNWFlZA==" class="button" target="_blank">
+                    <img src="Imagenes/instagram.png" alt="Icono de Instagram" height="30px" />
+                </a>
+                <a href="mailto:csmobiliario95@gmail.com" class="button" target="_blank">
+                    <img src="Imagenes/email.png" alt="Icono de WhatsApp" height="30px" />
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+              <i class="fa fa-bars">
+                <img src="Imagenes/menu.png" height="25px" />
+              </i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="#Camas">Camas</a>
+                    <a href="#Sillas">Sillas</a>
+                    <a href="#Regatones">Regatones</a>
+                    <a href="#Estanterias">Estanterias</a>
+                    <a href="#Acero">Acero Inoxidable</a>
+                    <a href="#Otros">Otros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
         </div>
-        <h1 class="titulo">Alexis Luna <span>Freelancer</span></h1>
+    </header>
+    <header>
+        <h1 class="titulo">LexLuna<span>Freelancer</span></h1>
     </header>
     <div class="nav-bg">
         <nav class="navegacionPrincipal contenedor">
-            <a href="index.html">Inicio</a>
-            <a href="SobreMi.html">Sobre Mi</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contacto</a>
+            <a href="#inicio">Mi presentación</a>
+            <a href="#servicios">Mis Servicios</a>
+            <a href="#lenguajes">Mis Lenguajes</a>
+            <a href="#contacto">Contactame</a>
         </nav>
     </div>
 
@@ -32,7 +61,7 @@
     <section class="hero">
         <div class="contenido-hero">
             <h2 class="titulo">
-                Diseñador y Desarrollador web <span>Freelancer</span>
+                Desarrollador Web<span>Freelancer</span>
             </h2>
 
             <p>
@@ -46,15 +75,45 @@
             </p>
             <p class="ubicacion">Quito, Ecuador</p>
 
-            <a class="boton" href="https://wa.me/34747414885">Contactar</a>
+            <!-- <a class="boton" href="https://wa.me/593983766329">Contactar</a> -->
         </div>
     </section>
-
     <div class="contenedor sombra">
-        <h2>Mis Servicios</h2>
-        <main class="servicios">
+        <h2 id="inicio">Presentación</h2>
+        <p>
+            Mi nombre es Alexis Luna, graduado de Ingeniero en Sistemas de la Información, me gusta mucho el desarrollo de software y todo lo que esto implica, el diseño web tanto en bak-end como front-end, crear aplicativos moviles para Android, el desarrollo de
+            videojuegos etc...
+        </p>
+        <div class="ayo">
+            <img src="img/fotoPerfil.jpg" alt="" width="250px" />
+            <br>
+            <a href="docs/AlexisLunaDesarrolladorSoftware.pdf" download="Mi_CV"><button type="button" class="boton">Descarga mi CV</button></a>
+
+
+        </div>
+
+        <main class="ayoPrincipal">
+            <h3>Mi Aportación</h3>
+            <div>
+
+
+                <p>
+                    Como bien he dicho mi especialidad es el desarrollo web y mi principal interes es dar a conocer tu negocio de forma virtual, ya que es una herramienta indispensable en estos tiempos. Si deseas llegar a mas publico de todas las edades con una pagina web
+                    llamativa para de esta manera tener un negocio mas rentable me encantaria ayudarte a lograrlo.
+                </p>
+                <p>
+                    Si te interesa conocer mas sobre mi descarga mi CV.
+                </p>
+                <br>
+
+        </main>
+        </div>
+
+        <div class="contenedor sombra">
+            <h2 id="servicios">Mis Servicios</h2>
+
             <div class="servicio">
-                <h3>Diseño Web</h3>
+                <h3>Aplicativos Web</h3>
                 <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />
@@ -67,11 +126,11 @@
             </svg>
                 </div>
                 <p>
-                    Diseño web a la medida, con maquetacion profesional llamativa y adaptable a cualquier dispositivo "smartphone, tablets, computadores, televisores etc..."
+                    Diseño web a la medida, con maquetacion profesional llamativa y adaptable a cualquier dispositivo "smartphone, tablets, computadores, televisores", tambien se realiza sistemas de reportes y facturacion.
                 </p>
             </div>
             <div class="servicio">
-                <h3>Aplicaciones Web</h3>
+                <h3>Aplicativos Moviles</h3>
                 <div class="iconos">
                     <!-- https://tablericons.com/ -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -95,7 +154,8 @@
             </svg>
                 </div>
                 <p>
-                    Si desea una web con aplicativos tales como servicios de facturacion, sistemas de reportes, cobros en linea etc... esta en el lugar ideal, me encantaria poder ayudarle a usted y a su empresa.
+                    Si desea un aplicativo movil tanto para Android como para IOS he impresionar a tus clientes de tu negocio y quieres hacer que se sientan como si estuvieran consumiendo en una gran franquicia como McDonalds, ahora esta todoa tu alcance contactame para
+                    plasmar tus ideas.
                 </p>
             </div>
             <div class="servicio">
@@ -110,51 +170,83 @@
             </svg>
                 </div>
                 <p>
-                    De las mas poderosas herramientas de marketing digital hoy por hoy son las redes sociales, con una correcta asesoria, ya que millones de personas son adictas a ellas. Si usted desea llegar a esas personas pues con mucho gusto estoy para ayudarle.
+                    De las mas poderosas herramientas de marketing digital hoy por hoy son las redes sociales, con una correcta asesoría, ya que millones de personas son adictas a ellas. Si usted desea llegar a esas personas pues con mucho gusto estoy para ayudarle.
                 </p>
             </div>
-        </main>
 
-        <div class="contacto">
-            <h2>Contactar</h2>
-            <form class="formulario" action="#" method="POST">
-                <legend>Contactanos llenando todos los campos</legend>
 
-                <div class="contenedor-campos">
-                    <div class="campo">
-                        <label>Nombre</label>
 
-                        <input class="input-text" type="text" name="nombre" placeholder="Nombre" required />
-                    </div>
-                    <div class="campo">
-                        <label>Teléfono</label>
-                        <input class="input-text" type="tel" name="telefono" placeholder="Teléfono" />
-                    </div>
-                    <div class="campo w-100">
-                        <label>Correo</label>
-
-                        <input class="input-text" type="mail" name="correo" placeholder="Mail" />
-                    </div>
-                    <div class="campo w-100">
-                        <label>Mensaje:</label>
-
-                        <textarea class="input-text"></textarea>
-                    </div>
-                </div>
-                <!--.contenedor-campos-->
-                <div class="enviar">
-                    <input class="boton w100" type="submit" value="Enviar" id="enviar" onclick="fueEnviado()" />
-                </div>
-            </form>
         </div>
-    </div>
+        <div class="contenedor sombra">
+            <h2 id="lenguajes">Mis Lenguajes de Trabajo</h2>
+            <h3>Front-End</h4>
+                <div class="imagenes">
+                    <div class="front">
+                        <img src="img/html5.png" alt="" width="300px" height="300px" />
 
-    <footer>
-        <p>
-            Todos los derechos reservados por Alexis Luna Freelancer - CreativeSource
-        </p>
-    </footer>
-    <script src="js/main.js"></script>
+                        <img src="img/css3.jpg" alt="" width="300px" height="300px" />
+
+                        <img src="img/js.png" alt="" width="300px" height="300px" />
+                    </div>
+                    <br><br><br>
+                    <h3>Back-End</h4>
+                        <div class="back">
+                            <img src="img/java.png" alt="" width="300px" height="300px" />
+                            <img src="img/c++.png" alt="" width="300px" height="300px" />
+                            <img src="img/python.jpg" alt="" width="300px" height="300px" />
+                        </div>
+                        <br><br><br>
+                        <h3>Frameworks</h4>
+                            <br><br><br>
+                            <div class="frameworks">
+                                <img src="img/Django.jpg" alt="" width="300px" height="300px" />
+                                <img src="img/jpa.png" alt="" width="300px" height="300px" />
+                            </div>
+                </div>
+        </div>
+        <div class="contenedor sombra">
+            <div class="contacto">
+                <h2 id="contacto">Contactar</h2>
+                <form class="formulario" action="#" method="POST">
+                    <legend>Contactanos llenando todos los campos</legend>
+
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" name="nombre" placeholder="Nombre" id="nombre" required />
+                        </div>
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" name="telefono" placeholder="Teléfono" id="telefono" />
+                        </div>
+                        <div class="campo w-100">
+                            <label>Correo</label>
+
+                            <input class="input-text" type="mail" name="correo" placeholder="Mail" id="email" />
+                        </div>
+                        <div class="campo w-100">
+                            <label>Mensaje:</label>
+
+                            <textarea class="input-text" id="mensaje"></textarea>
+                        </div>
+                    </div>
+                    <!--.contenedor-campos-->
+                    <div class="enviar">
+                        <input class="boton w100" type="submit" value="Enviar" id="enviar" onclick="fueEnviado()" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="limpiar"></div>
+
+        <footer>
+            <p>
+                Todos los derechos reservados por Alexis Luna Freelancer - CreativeSource
+            </p>
+            <img src="img/vectorizado.svg" alt="" height="40px">
+        </footer>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

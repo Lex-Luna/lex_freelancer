@@ -1,451 +1,447 @@
 :root {
-  --blanco: #ffffff;
-  --primario: #ffc107;
-  --secundario: #0097a7;
-  --gris: #283747;
-  --oscuro: #212121;
+    --blanco: #ffffff;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #283747;
+    --oscuro: #212121;
 }
 
 html {
-  box-sizing: border-box;
-  min-height: 100%;
+    box-sizing: border-box;
+    min-height: 100%;
 }
 
 .fixSpace {
-  height: 5.5rem;
-  background-color: transparent;
-  width: 100%;
+    height: 5.5rem;
+    background-color: transparent;
+    width: 100%;
 }
 
 .header {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5.5rem;
-  z-index: 1000;
-  padding: 0;
-  background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.5rem;
+    z-index: 1000;
+    padding: 0;
+    background-color: white;
 }
 
 .dropbtn {
-  background-color: transparent;
-  padding: 1.6rem;
-  font-size: 2.6rem;
-  border: none;
-  cursor: pointer;
+    background-color: transparent;
+    padding: 1.6rem;
+    font-size: 2.6rem;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown {
-  display: flex;
-  align-items: center;
-  position: relative;
-  display: inline-block;
-  margin-top: 0;
-  padding: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    padding: 0;
 }
 
 .dropdown-content {
-  display: none;
-  right: 0;
-  position: absolute;
-  min-width: 1.6rem;
-  z-index: 1;
-  padding: 0;
-  margin-bottom: 3rem;
+    display: none;
+    right: 0;
+    position: absolute;
+    min-width: 1.6rem;
+    z-index: 1;
+    padding: 0;
+    margin-bottom: 3rem;
 }
 
 .dropdown-content a {
-  color: white;
-  padding: 1rem 1rem;
-  text-decoration: none;
-  display: block;
-  background-color: rgba(21, 7, 85, 0.7);
+    color: white;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(21, 7, 85, 0.7);
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
-  font-size: 1.5rem;
+    display: block;
+    font-size: 1.5rem;
 }
 
 main .ayo {
-  float: left;
-  margin-right: 2rem;
+    float: left;
+    margin-right: 2rem;
 }
 
 .imgAyo {
-  float: left;
+    float: left;
 }
 
 .parrafo {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .container-items {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
-  place-items: center;
-  background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    place-items: center;
+    background-color: transparent;
 }
 
 .info h3 {
-  color: black;
+    color: black;
 }
 
 @media (min-width: 370px) {
-  .container-items {
-    justify-content: center;
-  }
+    .container-items {
+        justify-content: center;
+    }
 }
 
 @media (min-width: 768px) {
-  .container-items {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    .container-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .item {
-  border-radius: 10px;
-  max-width: 15rem;
-  min-height: 32rem;
-  align-items: center;
-  justify-content: center;
+    border-radius: 10px;
+    max-width: 15rem;
+    min-height: 32rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .item:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .item img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  transition: all 0.5s;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
 }
 
 .item figure {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .item:hover img {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .servicios,
 .navegacionPrincipa,
 .formulario {
-  scroll-snap-align: center;
-  scroll-snap-align: always;
+    scroll-snap-align: center;
+    scroll-snap-align: always;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 p {
-  line-height: 2;
-  font-size: 1.5rem;
-  text-align: justify;
+    line-height: 2;
+    font-size: 1.5rem;
+    text-align: justify;
 }
 
 body {
-  font-family: monospace;
-  min-height: 100%;
-  background-color: #212121;
+    font-family: monospace;
+    min-height: 100%;
+    background-color: #212121;
 }
 
 h1 {
-  font-size: 1.4rem;
-  background-color: transparent;
-  border-radius: 100px;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border-radius: 100px;
 }
 
 h1 span {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 h2 {
-  font-size: 2.4rem;
+    font-size: 2.4rem;
 }
 
 h3 {
-  color: var(--secundario);
-  font-weight: 400;
-  font-size: 1.6rem;
+    color: var(--secundario);
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
 h1,
 h2,
 h3 {
-  text-align: center;
+    text-align: center;
 }
 
 ul {
-  line-height: 10px;
+    line-height: 10px;
 }
 
 footer {
-  color: rgba(255, 255, 255, 1);
-  background-color: black;
-  font-size: 1rem;
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
-  font-size: 1rem;
-}
-
-.imgFooter {
-  margin: 0 auto;
+    font-size: 1.5rem;
 }
 
 .contenedor {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .contenedor p {
-  font-size: 3.5 rem;
+    font-size: 3.5 rem;
 }
 
 .sombra {
-  padding: 1rem;
-  margin-bottom: 2rem;
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
-  -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
-  box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
 }
 
 .nav-bg {
-  background-color: var(--secundario);
+    background-color: var(--secundario);
 }
 
 .w100 {
-  width: 100%;
+    width: 100%;
 }
 
 .fotoPerfil {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-right: 1rem;
-  min-width: 300px;
-  /* float: left; */
-  display: inline;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 1rem;
+    min-width: 300px;
+    /* float: left; */
+    display: inline;
 }
 
 .hero {
-  background-image: url(../img/freel.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 450px;
-  position: relative;
-  margin-bottom: 2rem;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
+    background-image: url(../img/freel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .contenido-hero {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenido-hero h2,
 .concontenido-hero p {
-  color: var(--blanco);
-  font-size: 2.6rem;
+    color: var(--blanco);
+    font-size: 2.6rem;
 }
 
 .boton {
-  background-color: var(--secundario);
-  text-decoration: none;
-  padding: 0.5rem 3rem;
-  font-size: 1.2rem;
-  color: var(--blanco);
-  margin-top: 3rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 0.5rem;
+    background-color: var(--secundario);
+    text-decoration: none;
+    padding: 0.5rem 3rem;
+    font-size: 1.2rem;
+    color: var(--blanco);
+    margin-top: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0.5rem;
 }
 
 .boton:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
-  .servicios {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    column-gap: 0.5rem;
-  }
+    .servicios {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        column-gap: 0.5rem;
+    }
 }
 
 .limpiar {
-  clear: both;
+    clear: both;
 }
 
 .servicio p {
-  text-align: justify;
-  padding: 0 1.5rem;
+    text-align: justify;
+    padding: 0 1.5rem;
 }
 
 .servicio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .iconos {
-  display: flex;
-  height: 150px;
-  width: 150px;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: var(--primario);
-  border-radius: 50%;
+    display: flex;
+    height: 150px;
+    width: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primario);
+    border-radius: 50%;
 }
 
 .iconos i {
-  font-size: 2rem;
-  color: var(--oscuro);
+    font-size: 2rem;
+    color: var(--oscuro);
 }
 
 form {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .titulo {
-  color: gray;
-  font-family: monospace;
-  font-size: 2rem;
+    color: gray;
+    font-family: monospace;
+    font-size: 2rem;
 }
 
 .ubicacion {
-  color: var(--primario);
-  display: flex;
+    color: var(--primario);
+    display: flex;
 }
 
 .titulo span {
-  font-size: 2rem;
-  color: darkgrey;
+    font-size: 2rem;
+    color: darkgrey;
 }
 
 .formulario {
-  background-color: var(--gris);
-  width: min(60rem, 100%);
-  margin: 0 auto;
-  padding: 2rem;
-  border-radius: 1rem;
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .formulario legend {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  color: var(--primario);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: var(--primario);
 }
 
 .formulario fieldset {
-  border: none;
-  text-align: center;
+    border: none;
+    text-align: center;
 }
 
 .contenedor-campos {
-  display: grid;
+    display: grid;
 }
 
 @media (min-width: 768px) {
-  .contenedor-campos {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto 20rem;
-    column-gap: 1rem;
-  }
-  .campo:nth-child(3) {
-    grid-column: 1/3;
-  }
-  .campo:nth-child(4) {
-    grid-column: 1/3;
-  }
+    .contenedor-campos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
+    .campo:nth-child(3) {
+        grid-column: 1/3;
+    }
+    .campo:nth-child(4) {
+        grid-column: 1/3;
+    }
 }
 
 .campo textarea {
-  height: 20rem;
+    height: 20rem;
 }
 
 .campo-linea {
-  grid-template-columns: auto;
-  margin-bottom: 0.5rem;
-  color: cornsilk;
-  font-weight: bold;
-  display: inline-block;
-  width: 48%;
+    grid-template-columns: auto;
+    margin-bottom: 0.5rem;
+    color: cornsilk;
+    font-weight: bold;
+    display: inline-block;
+    width: 48%;
 }
 
 .campo {
-  margin-bottom: 0.5rem;
-  color: cornsilk;
-  font-weight: bold;
-  display: block;
-  flex-direction: column;
+    margin-bottom: 0.5rem;
+    color: cornsilk;
+    font-weight: bold;
+    display: block;
+    flex-direction: column;
 }
 
 .input-text {
-  width: 100%;
-  border: none;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .whatsapp-button {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 3rem;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 3rem;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
 }
 
 .whatsapp-button img {
-  width: 100%;
+    width: 100%;
 }
 
 .error {
-  background-color: rgb(185, 0, 0);
-  text-align: center;
-  padding: 1rem;
-  color: var(--blanco);
-  text-transform: uppercase;
+    background-color: rgb(185, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
 }
 
 .correcto {
-  background-color: rgb(74, 185, 0);
-  text-align: center;
-  padding: 1rem;
-  color: var(--blanco);
-  text-transform: uppercase;
+    background-color: rgb(74, 185, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
 }

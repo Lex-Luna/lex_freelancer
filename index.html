@@ -9,9 +9,13 @@
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="icon" href="img/vectorizado.svg" type="image/x-icon">
+
 </head>
 
 <body>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
     <div class="fixSpace"></div>
     <header class="header">
         <img src="img/vectorizado.svg" alt="logo" height="70px" />
@@ -63,7 +67,7 @@
             <div class="ayo">
                 <img src="img/fotoPerfil.jpg" alt="" width="250px" class="imgAyo" />
                 <br>
-                <a href="docs/AlexisLunaDesarrolladorSoftware.pdf" download="Mi_CV"><button type="button" class="boton">Descarga mi CV</button></a>
+                <a href="docs/CVdevEcua.pdf" download="Mi_CV"><button type="button" class="boton">Descarga mi CV</button></a>
 
 
             </div>
@@ -162,16 +166,26 @@
                     <figure>
                         <img src="img/html5.png" alt="" width="300px" height="300px" />
                     </figure>
+                    <div class="info">
+                        <h3>HTML5</h3>
+                    </div>
+
                 </div>
                 <div class="item">
                     <figure>
                         <img src="img/css3.jpg" alt="" width="300px" height="300px" />
                     </figure>
+                    <div class="info">
+                        <h3>CSS3</h3>
+                    </div>
                 </div>
                 <div class="item">
                     <figure>
                         <img src="img/js.png" alt="" width="300px" height="300px" />
                     </figure>
+                    <div class="info">
+                        <h3>JavaScript</h3>
+                    </div>
                 </div>
             </div>
             <br><br><br>
@@ -181,16 +195,25 @@
                         <figure>
                             <img src="img/java.png" alt="" width="300px" height="300px" />
                         </figure>
+                        <div class="info">
+                            <h3>Java</h3>
+                        </div>
                     </div>
                     <div class="item">
                         <figure>
                             <img src="img/c++.png" alt="" width="300px" height="300px" />
                         </figure>
+                        <div class="info">
+                            <h3>C++</h3>
+                        </div>
                     </div>
                     <div class="item">
                         <figure>
                             <img src="img/python.jpg" alt="" width="300px" height="300px" />
                         </figure>
+                        <div class="info">
+                            <h3>Python</h3>
+                        </div>
                     </div>
 
                 </div>
@@ -200,20 +223,39 @@
                     <div class="container-items">
                         <div class="item">
                             <figure>
-                                <img src="img/Django.jpg" alt="" width="300px" height="300px" />
+                                <img src="img/django-icon.svg" alt="" width="300px" height="300px" />
                             </figure>
+                            <div class="info">
+                                <h3>Django</h3>
+                            </div>
                         </div>
                         <div class="item">
                             <figure>
-                                <img src="img/jpa.png" alt="" width="300px" height="300px" />
+                                <img src="img/dotnet.png" alt="" width="300px" height="300px" />
                             </figure>
+                            <div class="info">
+                                <h3>.Net</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <img src="img/R.png" alt="" width="300px" height="300px" />
+                            </figure>
+                            <div class="info">
+                                <h3>Xamarin Fomrms</h3>
+                            </div>
                         </div>
                     </div>
 
     </div>
+    </div>
+    </div>
+
+    </div>
     <div class="contenedor sombra">
         <div class="contacto">
-            <h2 id="contacto">Contactar</h2>
+            <h2 id="contacto">Testimonios y Sugerencias</h2>
+            <h3><b> Llenando todos los campos</b> y escribe la opinion de mi servicio</h3>
             <form class="formulario" action="#" method="POST">
                 <legend>Contactanos llenando todos los campos</legend>
 
@@ -232,7 +274,7 @@
                         <input class="input-text" type="mail" name="correo" placeholder="Mail" id="email" />
                     </div>
                     <div class="campo w-100">
-                        <label>Mensaje:</label>
+                        <label>Tu Opinion:</label>
 
                         <textarea class="input-text" id="mensaje"></textarea>
                     </div>
@@ -246,6 +288,10 @@
     </div>
 
     <div class="limpiar"></div>
+
+    <a href="https://wa.me/593983766329" class="whatsapp-button" target="_blank">
+        <img src="img/whatsapp.png" alt="Icono de WhatsApp" height="60px" />
+    </a>
 
     <footer>
         <p>

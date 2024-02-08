@@ -89,10 +89,12 @@ main .ayo {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
-  /* justify-content: center;
-  align-items: center; */
   place-items: center;
   background-color: transparent;
+}
+
+.info h3 {
+  color: black;
 }
 
 @media (min-width: 370px) {
@@ -411,6 +413,25 @@ form {
   border: none;
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+
+.whatsapp-button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 3rem;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-button img {
+  width: 100%;
 }
 
 .error {

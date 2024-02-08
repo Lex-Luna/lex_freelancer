@@ -1,4 +1,28 @@
-// function fueEnviado() {
+const firebaseConfig = {
+    apiKey: "AIzaSyCoCqY_p8z0tkJEdyxeaUkvp6zCUrmR5Eg",
+    authDomain: "lex-free.firebaseapp.com",
+    projectId: "lex-free",
+    storageBucket: "lex-free.appspot.com",
+    messagingSenderId: "722811007630",
+    appId: "1:722811007630:web:e7d24ee5eb1ed6ebc4cfdf"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+var formulario = document.getElementById('formulario');
+const saveCliente = (nombre, telefono, mail, mensaje) =>
+    db.collection("Cliente").doc().set({
+        nombre,
+        telefono,
+        mail,
+        mensaje
+    })
+
+// Initialize Firebase
+/* const app = initializeApp(firebaseConfig); */
+
+
+/* // function fueEnviado() {
 //     alert("El formulario a sido enviado exitosamente");
 // }
 //Variables
@@ -62,4 +86,4 @@ function mostrarMensaje(mensaje) {
     setTimeout(() => {
         alerta.remove();
     }, 3000);
-}
+} */

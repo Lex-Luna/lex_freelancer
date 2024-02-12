@@ -2,12 +2,13 @@
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBAsPy0-NOe_VgdLgQmWecLk0lz5hfkqvM",
-    authDomain: "freelancelex-d2f93.firebaseapp.com",
-    projectId: "freelancelex-d2f93",
-    storageBucket: "freelancelex-d2f93.appspot.com",
-    messagingSenderId: "309162826540",
-    appId: "1:309162826540:web:4efa32a77960a11b04aa89"
+    apiKey: "AIzaSyBt9UbZsYj21ZMyPqckh7pAqZK4_-IVbsE",
+    authDomain: "lexfreelancer-a33e7.firebaseapp.com",
+    projectId: "lexfreelancer-a33e7",
+    storageBucket: "lexfreelancer-a33e7.appspot.com",
+    messagingSenderId: "19415787627",
+    appId: "1:19415787627:web:a828c571e81a0fe587292e",
+    measurementId: "G-J29VLGNRBS"
 };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();

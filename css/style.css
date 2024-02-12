@@ -160,7 +160,7 @@ main .ayo {
 
 p {
   line-height: 2;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: justify;
 }
 
@@ -212,6 +212,11 @@ footer {
 footer p {
   font-size: 1.3rem;
   text-align: center;
+}
+
+.imgFooter {
+  background-color: white;
+  border-radius: 30px;
 }
 
 .contenedor {

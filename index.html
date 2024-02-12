@@ -31,7 +31,7 @@
                 <a href="#inicio">Mi presentación</a>
                 <a href="#servicios">Mis Servicios</a>
                 <a href="#lenguajes">Mis Lenguajes</a>
-                <a href="#contacto">Contactame</a>
+                <a href="#contacto">Deja tu Testimonio</a>
             </div>
 
     </header>
@@ -66,8 +66,9 @@
             </p>
             <div class="ayo">
                 <img src="img/fotoPerfil.jpg" alt="" width="250px" class="imgAyo" />
-                <br>
-                <a href="docs/CVdevEcua.pdf" download="Mi_CV"><button type="button" class="boton">Descarga mi CV</button></a>
+
+                <a class="botonDescarga" href="docs/CVdevEcua.pdf" download="Mi_CV"><button type="button" class="boton">Descarga mi CV</button></a>
+
 
 
             </div>
@@ -164,7 +165,7 @@
             <div class="container-items">
                 <div class="item">
                     <figure>
-                        <img src="img/html5.png" alt="" width="300px" height="300px" />
+                        <img src="img/html5.png" loading="lazy" alt="" width="300px" height="300px" />
                     </figure>
                     <div class="info">
                         <h3>HTML5</h3>
@@ -173,7 +174,7 @@
                 </div>
                 <div class="item">
                     <figure>
-                        <img src="img/css3.jpg" alt="" width="300px" height="300px" />
+                        <img src="img/css3.jpg" loading="lazy" alt="" width="300px" height="300px" />
                     </figure>
                     <div class="info">
                         <h3>CSS3</h3>
@@ -181,7 +182,7 @@
                 </div>
                 <div class="item">
                     <figure>
-                        <img src="img/js.png" alt="" width="300px" height="300px" />
+                        <img src="img/js.png" loading="lazy" alt="" width="300px" height="300px" />
                     </figure>
                     <div class="info">
                         <h3>JavaScript</h3>
@@ -193,7 +194,7 @@
                 <div class="container-items">
                     <div class="item">
                         <figure>
-                            <img src="img/java.png" alt="" width="300px" height="300px" />
+                            <img src="img/java.png" loading="lazy" alt="" width="300px" height="300px" />
                         </figure>
                         <div class="info">
                             <h3>Java</h3>
@@ -201,7 +202,7 @@
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="img/c++.png" alt="" width="300px" height="300px" />
+                            <img src="img/c++.png" loading="lazy" alt="" width="300px" height="300px" />
                         </figure>
                         <div class="info">
                             <h3>C++</h3>
@@ -209,7 +210,7 @@
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="img/python.jpg" alt="" width="300px" height="300px" />
+                            <img src="img/python.jpg" loading="lazy" alt="" width="300px" height="300px" />
                         </figure>
                         <div class="info">
                             <h3>Python</h3>
@@ -223,7 +224,7 @@
                     <div class="container-items">
                         <div class="item">
                             <figure>
-                                <img src="img/django-icon.svg" alt="" width="300px" height="300px" />
+                                <img src="img/django-icon.svg" loading="lazy" alt="" width="300px" height="300px" />
                             </figure>
                             <div class="info">
                                 <h3>Django</h3>
@@ -231,7 +232,7 @@
                         </div>
                         <div class="item">
                             <figure>
-                                <img src="img/dotnet.png" alt="" width="300px" height="300px" />
+                                <img src="img/dotnet.png" loading="lazy" alt="" width="300px" height="300px" />
                             </figure>
                             <div class="info">
                                 <h3>.Net</h3>
@@ -239,7 +240,7 @@
                         </div>
                         <div class="item">
                             <figure>
-                                <img src="img/R.png" alt="" width="300px" height="300px" />
+                                <img src="img/R.png" loading="lazy" alt="" width="300px" height="300px" />
                             </figure>
                             <div class="info">
                                 <h3>Xamarin Fomrms</h3>
@@ -248,16 +249,15 @@
                     </div>
 
     </div>
-    </div>
-    </div>
+
 
     </div>
     <div class="contenedor sombra">
         <div class="contacto">
             <h2 id="contacto">Testimonios y Sugerencias</h2>
-            <h3><b> Llenando todos los campos</b> y escribe la opinion de mi servicio</h3>
-            <form class="formulario" action="#" method="POST">
-                <legend>Contactanos llenando todos los campos</legend>
+
+            <form id="Formu" class="formulario" action="#" method="POST">
+                <legend>Deja tu opinion llenando todos los campos</legend>
 
                 <div class="contenedor-campos">
                     <div class="campo">
@@ -281,7 +281,7 @@
                 </div>
                 <!--.contenedor-campos-->
                 <div class="enviar">
-                    <input class="boton w100" type="submit" value="Enviar" id="enviar" onclick="fueEnviado()" />
+                    <input class="boton w100" type="submit" value="Enviar" id="enviar" />
                 </div>
             </form>
         </div>
@@ -292,10 +292,13 @@
     <a href="https://wa.me/593983766329" class="whatsapp-button" target="_blank">
         <img src="img/whatsapp.png" alt="Icono de WhatsApp" height="60px" />
     </a>
+    <a href="https://www.linkedin.com/in/alexis-luna-montalvo-b3a821141/" class="linkedin-button" target="_blank">
+        <img src="img/linkedin.png" alt="Icono de LinkedIn" height="60px" />
+    </a>
 
     <footer>
         <p>
-            Todos los derechos reservados por Lex_Luna Freelancer
+            Todos los derechos reservados por Lex_Luna_Freelancer
         </p>
         <img src="img/vectorizado.svg" alt="" height="30px">
 

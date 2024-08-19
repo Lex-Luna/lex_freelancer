@@ -265,39 +265,77 @@
 
 
 
-    <div id="contacto " class="fixSpace "></div>
+    <!-- <div id="contacto " class="fixSpace "></div>
     <div class="contenedor sombra ">
         <div class="contacto ">
             <h2>Testimonios y Sugerencias</h2>
 
-            <form id="Formu " class="formulario " action="# " method="POST ">
+            <form id="Formu " class="formulario " action="https://formsubmit.co/alexisgabriel.lu@gmail.com" method="POST">
                 <legend>Deja tu opinion llenando todos los campos</legend>
 
                 <div class="contenedor-campos ">
                     <div class="campo ">
                         <label>Nombre</label>
-                        <input class="input-text " type="text " name="nombre " placeholder="Nombre " id="Nombre " required />
+                        <input class="input-text " type="text " name="name" placeholder="Nombre " id="Nombre " required />
                     </div>
                     <div class="campo ">
                         <label>Teléfono</label>
-                        <input class="input-text " type="tel " name="telefono " placeholder="Teléfono " id="Telefono " />
+                        <input class="input-text " type="tel " name="telephone" placeholder="Teléfono " id="Telefono " />
                     </div>
                     <div class="campo w-100 ">
                         <label>Correo</label>
 
-                        <input class="input-text " type="mail " name="correo " placeholder="Mail " id="Mail " />
+                        <input class="input-text " type="email" name="email" placeholder="Mail " id="Mail " />
                     </div>
                     <div class="campo w-100 ">
                         <label>Tu Opinion:</label>
 
-                        <textarea class="input-text " id="Mensaje "></textarea>
+                        <textarea class="input-text " id="Mensaje" name="message"></textarea>
                     </div>
                 </div>
-                <!--.contenedor-campos-->
+
                 <div class="enviar ">
                     <input class="boton w100 " type="submit " value="Enviar " id="enviar " />
                 </div>
             </form>
+        </div>
+    </div> -->
+    <!-- Wrapper container -->
+    <!-- Wrapper container -->
+    <div class="contenedor sombra ">
+        <div class="contacto ">
+            <h2>Testimonios y Sugerencias</h2>
+            <div class="container py-4">
+
+                <!-- Bootstrap 5 starter form -->
+                <form id="contactForm formulario" action="https://formsubmit.co/alexisgabriel.lu@gmail.com" method="POST">
+
+                    <!-- Name input -->
+                    <div class="mb-3">
+                        <label class="form-label" for="name">Name</label>
+                        <input class="form-control" id="name" type="text" name="name" placeholder="Name" />
+                    </div>
+
+                    <!-- Email address input -->
+                    <div class="mb-3">
+                        <label class="form-label" for="emailAddress">Email Address</label>
+                        <input class="form-control" id="emailAddress" type="email" name="email" placeholder="Email Address" />
+                    </div>
+
+                    <!-- Message input -->
+                    <div class="mb-3">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+                    </div>
+
+                    <!-- Form submit button -->
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                    </div>
+
+                </form>
+
+            </div>
         </div>
     </div>
 

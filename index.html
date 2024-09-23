@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- nuevo boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 
 
 
@@ -97,7 +100,7 @@
                                     <img src="img/linkedin.png" alt="Icono de LinkedIn" height="40px" />
                                 </a>
                                 <a href="docs/CVdevEcua17-8-24.pdf" class="linkedin-button" target="_blank">
-                                    <img src="img/cv.png" alt="Icono de CV" height="40px" />
+                                    <img src="img/cv.png" alt="Icono de CV" height="40px" style="background-color: blue;border-radius: 100%;" />
                                 </a>
                                 <a href="https://github.com/Lex-Luna/" class="linkedin-button" target="_blank">
                                     <img src="img/code.png" alt="Icono de GitHub" height="40px" />
@@ -106,8 +109,8 @@
                         </div>
                         <h2>Presentación</h2>
                         <p>
-                            Mi nombre es Alexis Luna, graduado en Ingeniería en Sistemas de la Información. Tengo 2 años de experiencia en desarrollo web y me especializo como desarrollador web Full Stack. También he participado en proyectos de aplicativos móviles para Android y
-                            desarrollo de videojuegos en Unity 3D.
+                            Mi nombre es Alexis Luna, tengo 2 años de experiencia en desarrollo web y estoy
+                            <a style="background-color: rgba(220, 20, 60, 0.1);text-decoration: none; font-weight: normal; transform: none; color: black;" href="docs/titulo_universitario.pdf">horgullosamente graduado en Ingeniería en Sistemas de la Información</a>                            <b> Unviersidad Tecnológica Israel</b>. me especializo como desarrollador web Full Stack. También he participado en proyectos de aplicativos móviles para Android y desarrollo de videojuegos en Unity 3D.
                         </p>
                     </main>
                 </div>
@@ -158,7 +161,93 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
     </div>
+    <div class="fixSpace" id="proyectos"></div>
 
+    <div class="contenedor sombra">
+        <h2>Proyectos</h2>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img src="img/TarjetaInicio.jpeg" alt="" />
+                </figure>
+                <div class="info">
+                    <h3>CSM Mobiliario</h3>
+                </div>
+
+                <div class="item-info">
+
+                    <P>Landing Web para todo tipo de dispositivos</P>
+                    <div class="botones" style="display: flex; justify-content: center; ">
+                        <a href="https://csmmobiliario.store/" style="margin-right: 15px;" class="linkedin-button" target="_blank">
+                            <img src="img/eye.png" alt="Icono ver" style="width: 25px; height: auto; background-color: blue;" />
+                        </a>
+                        <a href="https://github.com/Lex-Luna/CSMMoviliario" class="linkedin-button" target="_blank">
+                            <img src="img/code.png" alt="Icono de GitHub" style="width: 25px; height: auto;" />
+                        </a>
+                    </div>
+                    <h3>Herramientas</h3>
+                    <ul style="line-height: 1.5;"> <b>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>bootstrap</li>
+                    <li>FIREBASE</li>
+                    <li>Formulario de correos electronicos</li>
+                </b>
+                    </ul>
+                    <h3>Propietario:</h3>
+                    <p style="text-align: justify;">Lic. Steven Cusme Propietario de mobiliario CSM Mobiliario</p>
+                    <div class="botones" style="display: flex; justify-content: center; ">
+                        <a href="https://www.linkedin.com/in/jonathan-cusme-1b273b189/" class="linkedin-button" target="_blank">
+                            <img src="img/linkedin.png" alt="Icono de LinkedIn" style="width: 25px; height: auto; " />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <figure>
+                    <img src="img/GVHectorLuna.PNG" alt="" />
+                </figure>
+                <div class="info">
+                    <h3>Galeria Virtual de Héctor Luna</h3>
+                </div>
+
+                <div class="item-info">
+
+                    <P>Landing Web para todo tipo de dispositivos</P>
+                    <div class="botones" style="display: flex; justify-content: center; ">
+                        <a href="https://xn--galerawebhctorluna-kwb8e.website/" style="margin-right: 15px;" class="linkedin-button" target="_blank">
+                            <img src="img/eye.png" alt="Icono ver" style="width: 25px; height: auto; background-color: blue;" />
+                        </a>
+                        <a href="https://github.com/Lex-Luna/Hector_Luna" class="linkedin-button" target="_blank">
+                            <img src="img/code.png" alt="Icono de GitHub" style="width: 25px; height: auto;" />
+                        </a>
+                    </div>
+                    <h3>Herramientas</h3>
+                    <ul style="line-height: 1.5;"> <b>
+                    <li>Canvas para diseño de logo</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>bootstrap</li>
+                </b>
+                    </ul>
+                    <h3>Propietario:</h3>
+                    <p style="text-align: justify;">Artista Visual, creador de varias piezas de arte como pinturas esculturas y grabados</p>
+                    <div class="botones" style="display: flex; justify-content: center; ">
+                        <a href="https://www.linkedin.com/in/h%C3%A9ctor-luna-lara-5503b5b7/" class="linkedin-button" target="_blank">
+                            <img src="img/linkedin.png" alt="Icono de LinkedIn" style="width: 25px; height: auto; " />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
     <div id="skills" class="fixSpace"></div>
     <div class="contenedor sombra skills">
         <h2>Mis Skills</h2>
@@ -168,19 +257,19 @@
             <div class="slider-track">
 
                 <div class="pulserNaranja">
-                    <img class="imgSkills" src="https://i.ibb.co/THr0TsW/html-5.png" alt="html-5">
+                    <img class="imgSkills" src="img/html5.png" alt="html-5">
                 </div>
 
 
 
                 <div class="pulserAzul">
-                    <img class="imgSkills" src="https://i.ibb.co/7GKkvN2/css-3.png" alt="css-3">
+                    <img class="imgSkills" src="img/css3.png" alt="css-3">
 
                 </div>
 
 
                 <div class="pulserAmarillo">
-                    <img class="imgSkills" src="https://i.ibb.co/9cBr4jx/java-script.png" alt="java-script ">
+                    <img class="imgSkills" src="img/js.png" alt="java-script ">
                 </div>
 
             </div>
@@ -191,19 +280,19 @@
         <div class="slider ">
             <div class="slider-track ">
                 <div class="pulserAmarillo ">
-                    <img src="https://i.ibb.co/zH5KVks/c.png " alt="c ">
+                    <img src="img/c++.png" alt="c++ ">
                 </div>
 
                 <div class="pulserAzul ">
-                    <img class="imgSkills " src="https://i.ibb.co/d68Xb9J/python.png " alt="python ">
+                    <img class="imgSkills " src="img/python.png" alt="python ">
                 </div>
 
                 <div class="pulserNaranja ">
-                    <img class="imgSkills " src="https://i.ibb.co/TvQNs76/c-sharp.png " alt="c-sharp ">
+                    <img class="imgSkills " src="img/CS.png" alt="c-sharp ">
                 </div>
 
                 <div class="pulserAmarillo ">
-                    <img class="imgSkills " src="https://i.ibb.co/xfk0s2H/java.png " alt="java ">
+                    <img class="imgSkills " src="img/java.png" alt="java ">
                 </div>
             </div>
         </div>
@@ -215,16 +304,16 @@
 
 
                 <div class="pulserAzul">
-                    <img class="imgSkills " src="https://i.ibb.co/Jy7cKYN/website.png " alt="website ">
+                    <img class="imgSkills " src="img/AspNetCore.png" alt="Net Core">
                 </div>
 
                 <div class="pulserNaranja">
-                    <img class="imgSkills " src="https://i.ibb.co/j3sXCyy/angularjs.png " alt="angularjs ">
+                    <img class="imgSkills " src="img/Angular.png" alt="angularjs ">
 
                 </div>
 
                 <div class="pulserAmarillo">
-                    <img class="imgSkills " src="https://i.ibb.co/H2P5Vw3/django.png " alt="django ">
+                    <img class="imgSkills " src="img/Django.png" alt="django ">
                 </div>
 
             </div>
@@ -237,11 +326,11 @@
 
 
                 <div class="pulserAzul ">
-                    <img class="imgSkills " src="https://i.ibb.co/55GwjcB/mysql.png " alt="mysql ">
+                    <img class="imgSkills " src="img/mysql.png" alt="mysql ">
                 </div>
 
                 <div class="pulserNaranja ">
-                    <img class="imgSkills " src="https://i.ibb.co/VYrnnXC/postgre.png " alt="postgre ">
+                    <img class="imgSkills " src="img/postgres.png" alt="postgre ">
                 </div>
 
                 <div class="pulserAmarillo ">
@@ -249,7 +338,7 @@
                 </div>
 
                 <div class="pulserAzul ">
-                    <img class="imgSkills " src="https://i.ibb.co/pxQC6f4/sql-server.png " alt="sql-server ">
+                    <img class="imgSkills " src="img/sql server.png" alt="sql-server ">
                 </div>
 
             </div>
@@ -259,29 +348,34 @@
     <div id="contacto" class="fixSpace"></div>
     <div class="contenedor sombra">
         <div class="contacto">
-            <h2>Testimonios y Sugerencias</h2>
+            <h2>Contactanos</h2>
 
-            <form id="Formu" class="formulario" method="POST">
-                <legend>Deja tu opinion llenando todos los campos</legend>
+            <form id="Formu" class="formulario" action="mailto:alexisgabriel.lu@gmail.com" method="get" enctype="text/plain">
 
-                <div class="contenedor-campos ">
-                    <div class="campo ">
+
+                <div>
+                    <!-- <div class="campo ">
                         <label>Nombre</label>
-                        <input class="input-text " type="text " name="name" placeholder="Nombre " id="Nombre " required />
+                        <input class="input-text " type="text " name="name" placeholder="Nombre" id="Nombre" required />
                     </div>
                     <div class="campo ">
                         <label>Teléfono</label>
-                        <input class="input-text " type="tel " name="telephone" placeholder="Teléfono " id="Telefono " />
+                        <input class="input-text " type="tel " name="telephone" placeholder="Teléfono " id="Telefono" />
+                    </div> -->
+                    <div class="campo w-100">
+                        <label>Asunto</label>
+
+                        <input class="input-text " type="text" name="subject" placeholder="Asunto" id="Mail" />
+                    </div>
+                    <div class="campo w-100">
+                        <label>Correo
+
+                        <input class="input-text " type="email" name="email" placeholder="Tu correo" id="Mail" />
                     </div>
                     <div class="campo w-100 ">
-                        <label>Correo</label>
+                        <label>Mensaje:</label>
 
-                        <input class="input-text " type="email" name="email" placeholder="Mail " id="Mail " />
-                    </div>
-                    <div class="campo w-100 ">
-                        <label>Tu Opinion:</label>
-
-                        <textarea class="input-text " id="Mensaje" name="message"></textarea>
+                        <textarea class="input-text " id="Mensaje" name="body"></textarea>
                     </div>
                 </div>
 
@@ -289,41 +383,6 @@
                     <input class="boton w100" type="submit" value="Enviar" id="enviar" />
                 </div>
             </form>
-
-            <!-- <div class="container py-4">
-
-                
-                <form id="contactForm formulario" method="POST">
-                    
-
-                    
-                    <div class="mb-3">
-                        <label class="form-label" for="name">Name</label>
-                        <input class="form-control" id="name" type="text" name="name" placeholder="Name" />
-                    </div>
-
-                    
-                    <div class="mb-3">
-                        <label class="form-label" for="Telefono">Telefono</label>
-                        <input class="form-control" id="Telefono" type="Telefono" name="Telefono" placeholder="Telefono" />
-                    </div>
-
-
-
-                    
-                    <div class="mb-3">
-                        <label class="form-label" for="message">Message</label>
-                        <textarea class="form-control" id="message" name="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
-                    </div>
-
-                    
-                    <div class="d-grid">
-                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
-                    </div>
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-
-            </div> -->
 
         </div>
     </div>
@@ -342,14 +401,14 @@
     <footer>
         <p>
             Todos los derechos reservados por Alexis Luna desarrollador programador Web Freelancer
-            <img src="img/LogoSinFondo.png " alt=" " class="imgFooter " height="35px ">
+            <img src="img/LogoSinFondo.png " alt="logo" class="imgFooter " height="35px ">
         </p>
 
 
     </footer>
-    <script src="js/main.js "></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
+
+    <script src="js/main.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz " crossorigin="anonymous "></script>
 
 </body>

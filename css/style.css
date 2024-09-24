@@ -18,6 +18,16 @@ body {
     background-image: linear-gradient(to right, #3f4594, rgb(16, 3, 28));
 }
 
+.navbar .navbar-nav .nav-link {
+    opacity: 0.55;
+    /* Ajusta la opacidad de los enlaces de navegación */
+}
+
+.navbar .navbar-brand {
+    opacity: 0.55;
+    /* Ajusta la opacidad del logo o nombre de la marca */
+}
+
 .fixSpace {
     height: 5.5rem;
     background-color: transparent;
@@ -450,12 +460,24 @@ form {
     bottom: 40px;
     left: 40px;
     background-color: transparent;
-    color: #fff;
     border-radius: 50px;
     text-align: center;
     font-size: 3rem;
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
+}
+
+.whatsapp-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: pulseWhats 3s infinite;
+    background-color: #25d366;
 }
 
 .linkedin-button {
@@ -733,6 +755,17 @@ form {
     50% {
         scale: .2;
         opacity: 0.8;
+    }
+}
+
+@keyframes pulseWhats {
+    0% {
+        transform: scale(0);
+        opacity: 3;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
     }
 }
 

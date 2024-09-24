@@ -265,17 +265,29 @@ footer p {
 
 .formulario {
     background-color: rgba(185, 178, 178, 0.4);
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     padding: 1rem;
     border-radius: 1rem;
 }
 
-.formulario,
+@media (min-width: 570px) {
+    .formulario {
+        background-color: rgba(185, 178, 178, 0.4);
+        width: 60%;
+        margin: 0 auto;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+}
+
+
+/* .formulario,
 .contenedor-campos,
 textarea {
     width: 70%;
 }
+ */
 
 .fotoPerfil {
     margin-top: 30px;

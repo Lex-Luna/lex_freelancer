@@ -18,15 +18,9 @@ body {
     background-image: linear-gradient(to right, #3f4594, rgb(16, 3, 28));
 }
 
-.navbar .navbar-nav .nav-link {
-    opacity: 0.55;
-    /* Ajusta la opacidad de los enlaces de navegación */
-}
 
-.navbar .navbar-brand {
-    opacity: 0.55;
-    /* Ajusta la opacidad del logo o nombre de la marca */
-}
+
+
 
 .fixSpace {
     height: 5.5rem;
@@ -49,12 +43,7 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.navbar-brand img {
-    /* max-width: 80px; */
-    height: auto;
-    margin: 0;
-    padding: -50px;
-}
+
 
 .hero {
     background-image: url(../img/freel.jpg);
@@ -255,9 +244,7 @@ footer p {
     box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
 }
 
-.nav-bg {
-    background-color: var(--secundario);
-}
+
 
 .w100 {
     width: 100%;
